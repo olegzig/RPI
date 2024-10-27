@@ -1,11 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Хитрый жук</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <header class="bg-success text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <img src="/Images/logo.png" alt="Логотип" style="max-height: 50px;">
+            </div>
+            <nav class="nav">
+                <a href="#" class="nav-link text-white">Главная</a>
+                <a href="#" class="nav-link text-white">Галерея</a>
+                <a href="#" class="nav-link text-white">Наше местоположение</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner text-center py-5">
+        <div class="container">
+            <h2 class="display-4">Добро пожаловать в нашу агроусадьбу!</h2>
+            <p class="lead">Отдыхайте на природе, наслаждайтесь свежим воздухом и комфортом.</p>
+        </div>
+    </section>
+
+    <section class="description text-center py-5">
+        <div class="container">
+            <h3>О нашей усадьбе</h3>
+            <p>Мы предлагаем уникальные условия для отдыха и различные услуги для наших гостей. У нас вы можете
+                насладиться природой и провести время с близкими.</p>
+        </div>
+    </section>
+
+    <section class="services py-5">
+        <div class="container">
+            <h3 class="text-center">Наши услуги</h3>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <h4>Размещение</h4>
+                    <p>Уютные номера для комфортного отдыха.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h4>Экскурсии</h4>
+                    <p>Увлекательные экскурсии по окрестностям.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h4>Активные виды отдыха</h4>
+                    <p>Велопрогулки, рыбалка и многое другое!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="feedback py-5">
+        <div class="container">
+            <h3 class="text-center">Отзывы</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <p><strong>Иван:</strong> Отличное место для отдыха с семьей!</p>
+                </div>
+                <div class="col-md-6">
+                    <p><strong>Мария:</strong> Очень понравилась атмосфера и природа!</p>
+                </div>
+            </div>
+            <h3 class="text-center">Свяжитесь с нами</h3>
+            <form id="contactForm" class="text-center">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="feedback-name" placeholder="Ваше имя" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="feedback-email" placeholder="Ваш Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" id="feedback-text" rows="4" placeholder="Ваше сообщение"
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn btn-success">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-success text-white text-center py-3">
+        <p>Контакты: +7 (123) 456-78-90 | соц. сети</p>
+        <p class="mb-0">&copy; 2024 Агроусадьба "Хитрый жук"</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- JS файл для отправки писем -->
+    <script src="email.js"></script>
 </body>
+
 </html>
