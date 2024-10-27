@@ -5,7 +5,8 @@ body {
 a {
     text-decoration: none;
 }
-a:hover{
+
+a:hover {
     text-decoration: underline;
 }
 
@@ -31,7 +32,10 @@ h3 {
     background-color: #f8f9fa;
 }
 
-.logo {
-    border: 10px solid white;
+.logo img{
+    border: 0;
     border-radius: 25px;
+    background: #f4f4f4;
+    height: 50px;
+    width: 50px;
 }
