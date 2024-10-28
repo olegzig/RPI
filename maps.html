@@ -8,9 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <!-- JS для карты -->
-    <script src="https://api-maps.yandex.ru/v3/?apikey=2012ea58-2a49-46c9-b497-ce94f09b13ca&lang=ru_RU"></script>
-    <script src="/map.js"></script>
 </head>
 
 <body>
@@ -48,7 +45,15 @@
     </header>
 
     <main class="container mt-4">
-        <div id="map" style="width: 100%; height: 77vh"></div>
+        <div style="position:relative;overflow:hidden;height: 77vh;"><a
+                href="https://yandex.by/maps?utm_medium=mapframe&utm_source=maps"
+                style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс Карты</a><a
+                href="https://yandex.by/maps/29630/minsk-district/house/Zk4YcQRnTkYHQFtpfXt4cHVgbA==/?ll=27.739379%2C53.791830&utm_medium=mapframe&utm_source=maps&z=16.86"
+                style="color:#eee;font-size:12px;position:absolute;top:14px;">Солнечная улица, 14 —
+                Яндекс Карты</a><iframe
+                src="https://yandex.by/map-widget/v1/?ll=27.739379%2C53.791830&mode=whatshere&whatshere%5Bpoint%5D=27.737684%2C53.791934&whatshere%5Bzoom%5D=17&z=16.86"
+                width="100%" height="100%" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+        </div>
     </main>
 
     <footer class="bg-success text-white text-center py-3">
