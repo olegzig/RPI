@@ -26,6 +26,10 @@ h3 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+.banner .container{
+    background-color: #00000094;
+}
+
 .description,
 .services,
 .feedback {
